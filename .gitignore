@@ -170,3 +170,6 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+aps_failure_training_set1.csv
+sen_data.csv
+config

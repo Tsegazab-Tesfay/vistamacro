@@ -1,0 +1,2 @@
+DATABASE_NAME = "TESFAY_DATABASE".lower()
+COLLECTION_NAME = "sen_data"
