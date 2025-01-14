@@ -80,6 +80,7 @@ class TrainPipeline:
             model_pusher = ModelPusher(model_pusher_config, model_eval_artifact)
             model_pusher_artifact = model_pusher.initiate_model_pusher()
             return model_pusher_artifact
+        
         except  Exception as e:
             raise  VistaMacroException(e,sys)
 
