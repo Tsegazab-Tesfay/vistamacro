@@ -9,6 +9,7 @@
     bucket name
 3. ECR(Elastic container registery): To save docker image
     866852728425.dkr.ecr.eu-north-1.amazonaws.com/vista-macro
+	866852728425.dkr.ecr.eu-north-1.amazonaws.com/vista-macro
 
 
     General description: About the deployment
@@ -34,6 +35,10 @@
 	sudo usermod -aG docker ubuntu
 	newgrp docker
 
+	yes | sudo apt update
+	yes | sudo apt install apache2
+
+
 
 7. Configure EC2 as self-hosted runner
 
@@ -53,3 +58,15 @@ AWS_ECR_LOGIN_URI=566373416292.dkr.ecr.ap-south-1.amazonaws.com
 ECR_REPOSITORY_NAME=vista-macro
 
 MONGO_DB_URL=
+
+
+
+
+
+
+
+# AWS Certificate Manager
+- VPC
+- Internet gateway
+- Subbet
+- RouteTable
