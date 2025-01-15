@@ -10,6 +10,7 @@
 3. ECR(Elastic container registery): To save docker image
     866852728425.dkr.ecr.eu-north-1.amazonaws.com/vista-macro
 	866852728425.dkr.ecr.eu-north-1.amazonaws.com/vista-macro
+	866852728425.dkr.ecr.eu-north-1.amazonaws.com/vista-macro
 
 
     General description: About the deployment
