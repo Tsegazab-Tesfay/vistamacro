@@ -95,7 +95,7 @@ jobs:
       - name: Run Grafana Docker container
         run: |
           docker run -d -p 3000:3000 --name=grafana \
-          -v /Users/tt/Documents/VISTAMACRO/vistamacro/grafana.ini:/etc/grafana/grafana.ini \
+          -v /Users/tt/Documents/VISTAMACRO/vistamacro/grafana.ini:/mnt/test \
           grafana/grafana:latest
 
       - name: Run your application Docker container
