@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model API</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Welcome to the Model API</h1>
+
+    <!-- Authentication Button -->
+    <button onclick="window.location.href='/login'">Authentication</button>
+
+    <br><br>
+
+    <!-- Train Button -->
+    <button onclick="window.location.href='/train'">Train Model</button>
+
+    <br><br>
+
+    <!-- Predict Button -->
+    <h2>Upload CSV for Prediction</h2>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv" required>
+        <button type="submit">Submit for Prediction</button>
+    </form>
+    <div class="containerTwo">
+        <h1>Grafana Dashboard</h1>
+        <!-- Embed Grafana Panel for last 24 hours -->
+        <iframe src="http://localhost:3000/d-solo/beafb4ldh7saob/latest-one?orgId=1&from=now-24h&to=now&timezone=browser&panelId=1&__feature.dashboardSceneSolo" width=100% height="450" frameborder="0"></iframe>
+    </div>
+</body>
+</html>

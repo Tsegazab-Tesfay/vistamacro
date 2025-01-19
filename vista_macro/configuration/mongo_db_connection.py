@@ -14,6 +14,8 @@ class MongoDBClient:
                 mongo_db_url = os.getenv(MONGODB_URL_KEY)
                 #mongo_db_url = "###"
                 #mongo_db_url = os.getenv(MONGODB_URL_KEY)
+                mongo_db_url = "mongodb+srv://tesfay:fvSNQQ7uWUTdhE7h@cluster0.jl5f0.mongodb.net/"
+                
                 MongoDBClient.client = pymongo.MongoClient(mongo_db_url, tlsCAFile=ca)
             self.client = MongoDBClient.client
             self.database = self.client[database_name]
